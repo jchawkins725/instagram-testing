@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Testing</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+      <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId            : '462442401274281',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v4.0'
+            });
+            FB.ui({
+              method: 'share',
+              href: 'https://developers.facebook.com/docs/'
+              }, function(response){});
+          };
+        </script>
+        <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+  </body>
+</html>
